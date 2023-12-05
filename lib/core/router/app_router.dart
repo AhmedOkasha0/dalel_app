@@ -1,14 +1,14 @@
+import 'package:dalel_app1/core/utils/app_strings.dart';
+import 'package:dalel_app1/feautures/on_boarding/presentation/view/on_boarding_view.dart';
 import 'package:dalel_app1/feautures/splash/presentation/view/splash_view.dart';
-import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
-class AppRouter {
-  static MaterialPageRoute? onGenerateRoute(RouteSettings settings) {
-    switch (settings.name) {
-      case "/":
-        return MaterialPageRoute(
-          builder: (context) => const SplashScreen(),
-        );
-    }
-    return null;
-  }
-}
+final GoRouter goRouter = GoRouter(routes: [
+  GoRoute(
+    path: AppStrings.intialRoute,
+    builder: (context, state) => const SplashScreen(),
+  ),
+  GoRoute(path: AppStrings.onBordingRoute,
+  builder: (context, state) =>  OnBoardingView(),
+  )
+]);
