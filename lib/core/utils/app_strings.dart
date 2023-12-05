@@ -8,4 +8,9 @@ class AppStrings {
   static const thirdOnBoradingTitle =
       "Using modern AI technology for better user experience";
   static const fontFamilyPoppins = "poppins";
+  static const singUpRoute = "/signUp";
+  static const String creatAccount = "Creat Account";
+  static const String login = "Login Now";
+  static const String next = "Next";
+  static const loginRoute = "/login";
 }

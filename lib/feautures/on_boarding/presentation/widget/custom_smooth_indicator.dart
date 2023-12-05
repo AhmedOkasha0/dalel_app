@@ -10,14 +10,12 @@ class CustomSmoothIndicator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SmoothPageIndicator(
-
-        controller: controller, // PageController
-        count: 3,
-        effect:  ExpandingDotsEffect(
+      controller: controller, // PageController
+      count: 3,
+      effect: ExpandingDotsEffect(
           dotHeight: 7.h,
           dotWidth: 10.w,
-          activeDotColor: AppColors.primaryColor
-        ), 
-       );
+          activeDotColor: AppColors.primaryColor),
+    );
   }
 }
